@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 配置文件（包含敏感信息）
+secrets/accounts.yaml
+secrets/keys.yaml
+config/app.yaml
+*.log
+!config/*.example.yaml
+!secrets/*.example.yaml
+!requirements.txt
+
+# 日志文件
+*.log
+logs/
+
+# 数据文件
+data/*.csv
+data/*.db
+data/*.sqlite
+
+# 临时文件
+*.tmp
+*.bak
+.cache/
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 环境变量
+.env
+.env.local
+
+# 备份文件和示例
+*_example.py
+main.py
+
+# 文档（保留主README）
+exchange/**/README.md
+exchange/**/*_README.md

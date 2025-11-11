@@ -1,0 +1,9 @@
+# PyCoin Trading Framework - 核心依赖
+
+# 必需依赖
+aiohttp>=3.8.0              # 异步HTTP客户端和WebSocket
+pyyaml>=6.0                 # YAML配置文件解析
+logbook>=1.8.2              # 日志系统
+
+# 可选依赖 (根据需要安装)
+redis>=4.5.0                # Redis缓存 (如果使用Redis功能)

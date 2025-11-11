@@ -1,0 +1,58 @@
+# PyCoin Trading Framework - 应用配置文件
+# 复制此文件为 app.yaml 并根据需要修改配置
+
+# Redis 配置 (用于缓存和数据存储)
+redis:
+  host: localhost
+  port: 6379
+  password: null
+  max_connections: 10
+  decode_responses: true
+  db: 0
+
+# 心跳服务配置
+heartbeat:
+  interval: 60        # 心跳打印间隔（秒），0表示不打印
+  broadcast: 0        # 广播存活状态间隔（秒），0表示不广播
+
+# 代理配置（可选）
+proxy:
+  enabled: false
+  http: "http://127.0.0.1:7890"
+  https: null
+  # 如果需要代理，设置 enabled: true 并配置代理地址
+
+# 通知服务配置
+notifications:
+  # 企业微信机器人 Webhook Key
+  wxwork:
+    main_bot: "your-wxwork-webhook-key"
+    alert_bot: "your-alert-webhook-key"
+  
+  # Telegram 机器人
+  telegram:
+    bot_token: "your-telegram-bot-token"
+    chat_id: "your-telegram-chat-id"
+  
+  # 钉钉机器人（可选）
+  dingding:
+    access_token: ""
+    secret: ""
+  
+  # 邮件配置（可选）
+  email:
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 465
+    username: ""
+    password: ""
+    sender: ""
+    receivers: []
+
+# 日志配置
+logging:
+  level: "INFO"           # 日志级别: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file_enabled: true      # 是否写入日志文件
+  console_enabled: true   # 是否输出到控制台
+  path: "./logs"          # 日志文件保存路径
+  file_size: "10MB"       # 单个日志文件最大大小
+  backup_count: 5         # 保留的日志文件数量

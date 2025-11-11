@@ -21,17 +21,30 @@ git clone https://github.com/4cya/pycoin-framework.git my_trading_bot
 cd my_trading_bot
 ```
 
-### 2. 安装依赖
+### 2. 创建虚拟环境 (推荐)
 
 ```bash
-# 安装核心依赖
+# 创建虚拟环境
+python -m venv venv
+
+# 激活虚拟环境
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+```
+
+### 3. 安装依赖
+
+```bash
+# 确保虚拟环境已激活，然后安装依赖
 pip install -r requirements.txt
 ```
 
-### 3. 初始化配置
+### 4. 初始化配置
 
 ```bash
-# 运行初始化脚本
+# 运行初始化脚本 (确保虚拟环境已激活)
 python setup_project.py
 ```
 
@@ -43,7 +56,7 @@ cp config/app.example.yaml config/app.yaml
 cp secrets/accounts.example.yaml secrets/accounts.yaml
 ```
 
-### 4. 配置API密钥
+### 5. 配置API密钥
 
 编辑 `secrets/accounts.yaml` 文件：
 
@@ -54,7 +67,7 @@ exchanges:
     api_secret: "your_binance_secret"
 ```
 
-### 5. 开始使用
+### 6. 开始使用
 
 ```python
 import asyncio

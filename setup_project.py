@@ -43,18 +43,12 @@ def main():
         except Exception as e:
             print(f"❌ 创建失败 {target}: {e}")
     
-    # 创建目录
-    for directory in ["logs", "data"]:
-        dir_path = Path(directory)
-        if not dir_path.exists():
-            dir_path.mkdir(exist_ok=True)
-            print(f"📁 已创建目录: {directory}/")
+    # 日志和数据目录会在程序运行时自动创建
     
     print(f"\n✅ 初始化完成! 已创建 {created} 个配置文件")
     print("\n📝 下一步:")
     print("1. 编辑 secrets/accounts.yaml 填入API密钥")
-    print("2. 运行: pip install -r requirements.txt")
-    print("3. 开始开发您的交易程序")
+    print("2. 开始开发您的交易程序")
 
 
 if __name__ == "__main__":

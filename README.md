@@ -152,17 +152,17 @@ exchanges:
   binance:
     api_key: "your_api_key"
     api_secret: "your_api_secret"
-    testnet: true
-    enabled: true
 ```
 
 ## 🔗 获取API密钥
 
-| 交易所 | 注册链接 | 说明 |
-|--------|----------|------|
-| [Binance](https://accounts.marketwebb.me/zh-CN/register?ref=BN2025) | 全球最大交易所 | 现货+合约 |
-| [Gate.io](https://aaspeed.gaterelay.com/zh/signup?ref_type=103&ref=A1UQVVsN) | 老牌交易所 | 丰富的交易对 |
-| [Bybit](https://partner.bybit.com/b/BB2025) | 合约专业平台 | 统一账户模式 |
+| 交易所 | 返佣比例 | 注册链接 | 特色 |
+|--------|----------|----------|------|
+| **Binance** | 20% | [点击注册](https://accounts.marketwebb.me/zh-CN/register?ref=BN2025) | 全球最大，流动性最好 |
+| **Gate.io** | 40% | [点击注册](https://aaspeed.gaterelay.com/zh/signup?ref_type=103&ref=A1UQVVsN) | 老牌交易所，币种丰富 |
+| **Bybit** | 33% | [点击注册](https://partner.bybit.com/b/BB2025) | 体验流畅，可交易美股 |
+
+> 💡 **提示**: 使用上述邀请链接注册可享受手续费返佣优惠，降低交易成本
 
 ## 📱 通知服务
 
